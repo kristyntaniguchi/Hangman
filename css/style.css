@@ -44,7 +44,7 @@ body{
 }
 
 #picture{
-    background-image: url("/images/7da87316ce95503377a543adb174c607.jpg");
+    background-image: url("7da87316ce95503377a543adb174c607.jpg");
     background-position: center;
     background-size: cover;
     height: 40vh;
