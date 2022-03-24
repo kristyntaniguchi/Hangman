@@ -11,6 +11,7 @@ const usedLettersContainer = document.getElementById('used-letters-container');
 const usedLetters = document.getElementsByClassName('used-letters');
 const person1 = document.getElementById('person-1');
 const car = document.getElementById('car');
+const title = document.getElementById('title');
 
 let currentGuess = '';
 let currentLetter = '';
@@ -68,8 +69,6 @@ window.onload = function(){
     wordToGuess();
     // getKeyClicks();
     getButtonClicks();
-
-
 };
 
 function wordToGuess(){
@@ -154,7 +153,7 @@ function didWeAlreadyClickThat(){
 function trackingGuesses(){
     if(guessCounter == numberOfWrongGuesses){
         personHit();
-        // alert('you lose');
+        lose();
         window.setTimeout(reloadPage, 5000);
     }
 };
@@ -167,9 +166,11 @@ restartBtn.addEventListener('click', e => {
     location.reload();
 
 })
-
+function lose(){
+    title.innerText = 'YOU GOT RAN OVER'
+}
 function winner(){
     if(currentGuess === thisIsTheWord){
-        alert('You win');
+        title.innerText = 'YOU SURVIVED!'
     }
 }
