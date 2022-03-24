@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    background-color: rgb(187, 154, 202);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vh;
+    height: 95vh;
+    border: 1px solid black;    
+    margin-top: 2vh;
+    border-radius: 10px;
+    min-height: 450px;
+    min-width: 300px;
+} 
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+#score{
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5vh;
+    font-size: 1rem;
+}
+
+#picture{
+    background-color: white;
+    /* background-image: url("parking-lot-near-supermarket-background-place-vehicles-marking-road-store-grocery-shopping-vector-illustration-239206209.png"); */
+    background-position: center;
+    background-size: cover;
+    height: 38vh;
+    width: 60vh;
+    position: relative;
+}
+#person-1{
+    display: inline-block;
+    position: absolute;
+    transition: top 1s;
+    left: 8%;
+    top: 70%;
+}
+
+#car{
+    display: inline-block;
+    position: absolute;
+    transition: right .3s;
+    top: 70%;
+}
+
+#correct-word{
+    background-color: pink;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.correct-word-span{
+    border-bottom: 2px solid white;
+    width: 6vh;
+    height: 6vh;
+    margin: .7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#letters-container{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.letters{
+    border: 1px solid white;
+    height: 6vh;
+    width: 4.8vh;
+    margin:.7vh .4vh;
+    align-items: center;
+    border-radius: 10px;
+    align-content: space-between;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 3px grey;
+    font-size: 3vh;
+    background-color: white;
+}
+.letters:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+i{
+    font-size: 4vh;
+}
+
+#top-row-letters{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+}
+#middle-row-letters{
+    display: flex;
+    justify-content: center;
+}
+#bottom-row-letters{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#restart-btn{
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 6vh;
+    width: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+    margin-top: 1.5vh;
+    box-shadow: 1px 3px grey;
+    font-size: 2.5vh;
+    background-color: white;
+}
+#restart-btn:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+/* .animate-car{
+    animation: car 1s;
+}
+@keyframes car{
+    0%{left: 70%}
+    10%{left: 65%}
+    20%{left: 60%}
+    30%{left: 55%}
+    40%{left: 50%}
+    50%{left: 45%}
+    60%{left: 40%}
+    70%{left: 35%}
+    80%{left: 30%}
+    90%{left: 25%}
+    95%{left: 20%}
+    100%{left: 0%}
+}*/
+.animated-person{
+    animation: person 1s;
+    transform: rotate(450deg);
+} 
+@keyframes person{
+    0%{top: 45%; transform: rotate(0deg);}
+    40%{top: 30%; transfrom: rotate(360deg);}
+    60%{top: 25%; transfrom: rotate(450deg);}
+    80%{top: 30%; transfrom: rotate(180deg);}
+    100%{top: 45%; transfrom: rotate(90deg);}
+}
