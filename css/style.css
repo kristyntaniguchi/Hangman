@@ -15,10 +15,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60vh;
-    height: 95vh;
+    width: 60%;
+    height: 95%;
     border: 1px solid black;    
-    margin-top: 2vh;
+    margin-top: 2%;
     border-radius: 10px;
     min-height: 450px;
     min-width: 300px;
@@ -48,7 +48,7 @@ body{
     background-position: center;
     background-size: cover;
     height: 40vh;
-    width: 60vh;
+    width: auto;
     position: relative;
 }
 #person-1{
