@@ -55,7 +55,19 @@ const letterZ = document.getElementById("letter-z");
 
 const wordOptions = [
     'HELLO', 'GREEN', 'DAISY', 'PIZZA', 'APPLE', 'PHONE', 'BEANS', 
-    'FAIRY', 'GHOST', 'BLACK', 'MOUSE', 'CAPES', 'TIGER', 'SPOON'
+    'FAIRY', 'GHOST', 'BLACK', 'MOUSE', 'CAPES', 'TIGER', 'SPOON',
+    'HAPPY', 'TEARS', 'PLATE', 'COMBS', 'PLUMS', 'MANGO', 'QUIET',
+    'MIMIC', 'ERROR', 'SWIRL', 'KEBAB', 'HATCH', 'PLUMB', 'CRANE',
+    'HYPER', 'ALTAR', 'COAST', 'WORLD', 'WORDS', 'PEACH', 'SIEGE',
+    'DRINK', 'SUGAR', 'WHACK', 'COOKS', 'ROBIN', 'BRIDE', 'GROOM', 
+    'ALIVE', 'MOUTH', 'FIRES', 'WATER', 'TODAY', 'MOVIE', 'CRATE',
+    'EPOXY', 'NYMPH', 'YIELD', 'MIDST', 'DONOR', 'APRON', 'FLUFF',
+    'ANGRY', 'YOUTH', 'ALIEN', 'ELOPE', 'CHIEF', 'BOOZE', 'SLOTH',
+    'PANDA', 'HELPS', 'UNITE', 'PHOTO', 'BEACH', 'SANDY', 'CLAMS',
+    'HAIRY', 'BURNS', 'MAPLE', 'DUCKS', 'HAWKS', 'BIRDS', 'CROWS',
+    'BERRY', 'THYME', 'CURRY', 'PUPPY', 'HOUSE', 'FERRY', 'KITTY',
+    'PLANT', 'LEAFS', 'PASTE', 'GRAVE', 'RAINS', 'RAINY', 'CANOE', 
+    'KAYAK', 'RIVER', 'OCEAN', 'WAVES', 'TREES', 'OLIVE', 'CLOUD'
 ]
 
 
@@ -98,15 +110,15 @@ function getButtonClicks(){
 
             if(!thisIsTheWord.includes(this.innerText)) {
                 this.style.color = "white";
-                this.style.backgroundColor = "black";
+                this.style.backgroundColor = "grey";
                 guessCounter++;
                 let guessesLeft = numberOfWrongGuesses - guessCounter;
                 score.innerText = 'Guesses Left: ' + guessesLeft;
                 vroom();
             }
             else {
-                this.style.color = "white";
-                this.style.backgroundColor = "green";
+                this.style.color = "black";
+                this.style.backgroundColor = "gold";
                 currentGuess += currentLetter;
             }
             this.style.pointerEvents ="none";
@@ -154,23 +166,26 @@ function trackingGuesses(){
     if(guessCounter == numberOfWrongGuesses){
         personHit();
         lose();
+        
         window.setTimeout(reloadPage, 5000);
     }
 };
 
 function reloadPage() {
     location.reload();
-}
+};
 
 restartBtn.addEventListener('click', e => {
     location.reload();
 
-})
+});
 function lose(){
     title.innerText = 'YOU GOT RAN OVER'
-}
+};
 function winner(){
-    if(currentGuess === thisIsTheWord){
-        title.innerText = 'YOU SURVIVED!'
+    for(let i = 0; i < splitWord[i]; i++){
+        check1 += splitWord[i].innerText;
+        check2 += correctWordSpan[i].innerText;
     }
-}
+
+};
