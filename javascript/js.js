@@ -67,7 +67,12 @@ const wordOptions = [
     'HAIRY', 'BURNS', 'MAPLE', 'DUCKS', 'HAWKS', 'BIRDS', 'CROWS',
     'BERRY', 'THYME', 'CURRY', 'PUPPY', 'HOUSE', 'FERRY', 'KITTY',
     'PLANT', 'LEAFS', 'PASTE', 'GRAVE', 'RAINS', 'RAINY', 'CANOE', 
-    'KAYAK', 'RIVER', 'OCEAN', 'WAVES', 'TREES', 'OLIVE', 'CLOUD'
+    'KAYAK', 'RIVER', 'OCEAN', 'WAVES', 'TREES', 'OLIVE', 'CLOUD',
+    'DINER', 'LUNCH', 'PLATE', 'BOWLS', 'SALAD', 'BROWN', 'STEAL',
+    'PENNY', 'BREAK', 'HEART', 'SMALL', 'LARGE', 'HEAVY', 'LIGHT',
+    'TIRES', 'BUYER', 'CLOVE', 'PINES', 'SEATS', 'CLIFF', 'TRUCK',
+    'HARDY', 'PROOF', 'CANDY', 'PASTA', 'FACES', 'STARS', 'RIGHT',
+    'WRONG', 'GRACE', 'RUMOR', 'GIRLS', 'MASKS', 'SHOTS', 'BULBS'
 ]
 
 
