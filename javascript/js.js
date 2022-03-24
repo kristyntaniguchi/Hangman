@@ -100,10 +100,14 @@ function wordToGuess(){
 function vroom(){
     let moveCar = parseInt(car.style.right) + 8;
     car.style.right = moveCar + '%';
+    
 }
 
 function personHit(){
     person1.classList.add('animated-person');
+    let moveCar = parseInt(car.style.right) + 30;
+    car.style.right = moveCar + '%';
+
 }
 
 function getButtonClicks(){
